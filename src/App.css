@@ -14,9 +14,62 @@ body {
   color: #212121;
 }
 
-
 #root {
   height: 100%;
   overflow-x: hidden;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 1200px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  
+  /* Adjust header buttons for tablets */
+  .MuiButton-root {
+    padding: 8px 12px !important;
+    font-size: 14px !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  body {
+    font-size: 14px;
+  }
+  
+  /* Adjust header buttons for mobile */
+  .MuiButton-root {
+    padding: 6px 8px !important;
+    font-size: 12px !important;
+    margin: 0 2px !important;
+  }
+  
+  /* Adjust blog list width for mobile */
+  .blog-list-container {
+    width: 90% !important;
+  }
+  
+  /* Adjust form widths for mobile */
+  .form-container {
+    width: 90% !important;
+  }
+  
+  /* Adjust blog details card for mobile */
+  .blog-details-card {
+    min-width: 90% !important;
+    max-width: 90% !important;
+  }
 }
 
